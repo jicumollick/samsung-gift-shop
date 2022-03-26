@@ -5,6 +5,7 @@ import { AiFillDelete } from 'react-icons/ai';
 const Cart = ({cart}) => {
     return (
         <div>
+            <h3>Selected Phones</h3>
             {
                 cart.map(cart => 
                 

@@ -5,7 +5,7 @@ import SinglePhone from '../SinglePhone/SinglePhone';
 const Phones = ({phones,setPhones,handleAddToCart}) => {
 
     return (
-        <div className="row">
+        <div className="row d-flex gap-5 align-items-center">
            
 
             {

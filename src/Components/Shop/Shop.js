@@ -26,9 +26,9 @@ useEffect( () => {
 
     return (
         <div>
-            <div className="container-fluid">
+            <div className="container-fluid mt-5">
                 <div className="row">
-                    <div className="col-md-8 col-sm-12">
+                    <div className="col-md-8 col-sm-12 ps-md-5 ">
                    <Phones phones={phones} setPhones={setPhones} handleAddToCart={handleAddToCart}></Phones>
                     </div>
                     <div className="col-md-4 col-sm-12">

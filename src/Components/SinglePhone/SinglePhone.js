@@ -1,22 +1,23 @@
 import React from 'react';
-import { Button, Card } from 'react-bootstrap';
+import { Button} from 'react-bootstrap';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 import './SinglePhone.css';
 const SinglePhone = ({phone, handleAddToCart}) => {
     return (
-        <div className="col-md-4 col-sm-12">
-            <Card style={{ "width": '18rem'  }}>
-                 <Card.Img variant="top" src={phone.image} />
-        <Card.Body>
-        <Card.Title> {phone.phone_name} </Card.Title>
-        <Card.Text>
+        <div className="col-md-3 col-sm-12  card">
+          
+            
+                <img src={phone.image} alt="phone_image" className='image-fluid' />
+                
+               <h3 style={{"background-color":'#fff',"margin-top":'15px'}}>{phone.phone_name}</h3> 
+        
             Price: ${phone.price}
      
-        </Card.Text>
-    <Button  variant="primary" onClick={ () => handleAddToCart(phone)}>ADD TO CART  <AiOutlineShoppingCart className='icon' > </AiOutlineShoppingCart>  </Button>
-  </Card.Body>
-</Card> 
-        </div>
+       
+    <Button  variant="primary" onClick={ () => handleAddToCart(phone)} className="mt-3" >ADD TO CART  <AiOutlineShoppingCart className='icon ' > </AiOutlineShoppingCart>  </Button>
+  </div>
+
+
     );
 };
 
