@@ -26,16 +26,26 @@ const Cart = ({cart,setCart}) => {
         
         cart = [item];
         setCart(cart);  
-        console.log(cart);
+        
     } 
 
     
-    useEffect(()=> {
-       
-      
+    useEffect(()=> { 
         setCart(cart);
        
     },[cart,setCart])
+
+    // deleting a single item 
+    const deleteMe = (item) => {
+       
+        cart = cart.filter(
+        (cart) => {
+            return cart.id !== item.id;
+        }
+        );  
+        setCart(cart);
+        
+    }
  
     return (
         <div>
@@ -47,7 +57,7 @@ const Cart = ({cart,setCart}) => {
                     <img src={cart.image} alt="" />
                     <p>{cart.phone_name}</p>
                    
-<button>
+<button onClick={()=> deleteMe(cart)}>
 
                     <AiFillDelete className='icon2'></AiFillDelete>
 </button>
