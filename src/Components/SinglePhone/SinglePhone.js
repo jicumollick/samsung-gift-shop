@@ -4,7 +4,7 @@ import { AiOutlineShoppingCart } from 'react-icons/ai';
 import './SinglePhone.css';
 const SinglePhone = ({phone, handleAddToCart}) => {
     return (
-        <div className="col-md-3 col-sm-12  card">
+        <div className="col-md-3 col-sm-12  card ">
           
             
                 <img src={phone.image} alt="phone_image" className='image-fluid' />

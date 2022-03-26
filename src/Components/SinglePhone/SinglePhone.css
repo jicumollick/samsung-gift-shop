@@ -8,3 +8,15 @@
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .card img {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+  }
+}
