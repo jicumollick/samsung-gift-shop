@@ -9,7 +9,7 @@ const SinglePhone = ({phone, handleAddToCart}) => {
             
                 <img src={phone.image} alt="phone_image" className='image-fluid' />
                 
-               <h3 style={{"background-color":'#fff',"margin-top":'15px'}}>{phone.phone_name}</h3> 
+               <h3 style={{"backgroundColor":'#fff',"marginTop":'15px'}}>{phone.phone_name}</h3> 
         
             Price: ${phone.price}
      

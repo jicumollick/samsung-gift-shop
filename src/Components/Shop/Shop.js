@@ -9,12 +9,12 @@ const Shop = () => {
 
 
     const [phones,setPhones] = useState([]);
-    const [cart,setCarts] = useState([]);
+    const [cart,setCart] = useState([]);
 
 
 const handleAddToCart = (addedCart) => {
     const newCart = [...cart,addedCart];
-    setCarts(newCart);
+    setCart(newCart);
 }
 
 useEffect( () => {
@@ -32,7 +32,7 @@ useEffect( () => {
                    <Phones phones={phones} setPhones={setPhones} handleAddToCart={handleAddToCart}></Phones>
                     </div>
                     <div className="col-md-4 col-sm-12">
-                <Cart cart={cart} ></Cart> 
+                <Cart cart={cart} setCart={setCart} ></Cart> 
 
                     </div>
                 </div>
