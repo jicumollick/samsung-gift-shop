@@ -1,0 +1,14 @@
+.cart {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cart img {
+  width: 10%;
+  height: 10%;
+}
+
+.icon2 {
+  font-size: 20px;
+}
